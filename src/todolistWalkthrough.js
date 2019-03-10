@@ -1,39 +1,39 @@
 //Version 1 requirements:
 //It should have a place to store todos
-//var todos = ["item 1", "item 2", "item 3"]
+var todos = ["item 1", "item 2", "item 3"]
 //It should have a way to display todos
-//console.log("My Todos:",todos)
+console.log("My Todos:",todos)
 //It should have a way to add new todos
-//todos.push("item 4")
+todos.push("item 4")
 //It should have a way to change a todo
-//todos.[0] = "item 1 updated"
+todos.[0] = "item 1 updated"
 //it should have a way to delete a todo
-//todos.splice(0, 1)
+todos.splice(0, 1)
 
 //Version 2 requirements:
 //It should have a function to display todos
-//var todos = ["item 1", "item 2", "item 3"]
+var todos = ["item 1", "item 2", "item 3"]
 
-//function displayTodos() {
-//  console.log("My todos:", todos);
-//}
+function displayTodos() {
+  console.log("My todos:", todos);
+}
 //It should have a function to add todos
-//function addTodo(todo) {
-//  todos.push(todo);
-//  displayTodos();
-//}
+function addTodo(todo) {
+  todos.push(todo);
+  displayTodos();
+}
 //It should have a function to change todos
-//function changeTodo(position, newValue) {
-//  todos[position] = newValue;
-//  displayTodos();
-//}
+function changeTodo(position, newValue) {
+  todos[position] = newValue;
+  displayTodos();
+}
 //It should have a function to delete todos
-//function deleteTodo(position) {
-//  todos.splice(position, 1);
-//  displayTodos();
-//}
+function deleteTodo(position) {
+  todos.splice(position, 1);
+  displayTodos();
+}
 
-//Version 3 requirements
+//Version 3 requirements (Object)
 //It should store the todos array on an object
 //It should have a displayTodos method
 //It should have an addTodo method
@@ -53,7 +53,7 @@ var todolist = {
     this.todos.push(todo);
     this.displayTodos();
   },
-  changeTodo: function(position, newValue) {n0088127  
+  changeTodo: function(position, newValue) {
     this.todos[position] = newValue;
     this.displayTodos();
   },
